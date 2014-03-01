@@ -34,5 +34,6 @@ module ForbabiesDpUa
     config.i18n.default_locale = :ru
     config.assets.initialize_on_precompile = false
     I18n.enforce_available_locales = false
+    config.secret_key = "zzz12345"
   end
 end
