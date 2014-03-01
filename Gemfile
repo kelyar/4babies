@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.3'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 gem 'spree_i18n', github: 'spree/spree_i18n'
