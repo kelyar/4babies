@@ -1,13 +1,13 @@
 set :application, "4babies.dp.ua"
-set :repository,  "git@heroku.com:forbabies.git"
+set :repository,  "https://github.com/kelyar/4babies.git"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "4babies.dp.ua"                          # Your HTTP server, Apache/etc
-role :app, "4babies.dp.ua"                          # This may be the same as your `Web` server
-role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
-role :db,  "your slave db-server here"
+
+set :deploy_to, "/www/4babies.dp.ua"
+set :user, 'root'
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
