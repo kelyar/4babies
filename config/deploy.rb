@@ -7,7 +7,7 @@ set :scm, :git
 role :web, "4babies.dp.ua"                          # Your HTTP server, Apache/etc
 
 set :deploy_to, "/www/4babies.dp.ua"
-set :user, 'root'
+set :user, 'deployer'
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
