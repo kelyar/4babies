@@ -7,11 +7,12 @@
 # config.setting_name = 'new value'
 Spree.config do |config|
   # Example:
-  # Uncomment to override the default site name.
-  config.site_name = "4babies.dp.ua"
+  # Uncomment to stop tracking inventory levels in the application
+  # config.track_inventory_levels = false
+  #config.site_name = "4babies.dp.ua"
 end
 
-Spree.user_class = "Spree::LegacyUser"
+Spree.user_class = "Spree::User"
 
 SpreeI18n::Config.available_locales = [:ru]
 SpreeI18n::Config.supported_locales = [:ru]

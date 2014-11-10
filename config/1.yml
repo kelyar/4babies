@@ -1,0 +1,7 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: forbabies
+  pool: 5
+  username: forbabies
+  password: 123
